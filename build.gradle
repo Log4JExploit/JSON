@@ -16,6 +16,10 @@ dependencies {
     testRuntimeOnly('org.junit.platform:junit-platform-launcher')
 }
 
+jar {
+    archiveBaseName = ('JSON')
+}
+
 test {
     useJUnitPlatform()
     testLogging {
