@@ -9,12 +9,15 @@ A free to use JSON Library for your Java application. Free as in liberty and fre
 - works with unicode
 
 # Getting Started
-## Classes available to you:
-- JSONObject
-- JSONArray
-- JSON
-- StringIterator (useful for other string operations and parsing)
+```
+JSONObject object = new JSONObject();
+object.put("key", true);
 
-# Other
-Use JSON.debug(your JSONParseException) to get a log message containing a visual  
-hint for where in the text the json parsing failed.
+String text = object.toJSONString();
+JSONObject parsed = JSON.byText(text);
+```
+
+# Honorable Mentions
+
+[@nemethi](https://github.com/nemethi) inspired this project  
+with their project [json-pretty-printer](https://github.com/nemethi/json-pretty-printer)
